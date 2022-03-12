@@ -127,7 +127,7 @@ def get_estimations(input_features_dict, prob: bool = False, transfer_class=['M1
         processed_features = organizing_features(input_features_dict_class, id_number)
 
         # Opening model
-        model = opening_model(f'RFC_for_class_{t_class}.pkl')
+        model = opening_model(f'RFC_for_class_{t_class}.joblib')
 
         # Predicting
         prediction = model.predict(processed_features)
